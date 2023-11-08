@@ -1005,18 +1005,20 @@ input{
 
 }
 
+
 /*Mobile Screens*/
 @media only screen and (max-width: 420px) {
     .new-updates{
         height: 5vh;
+        font-size: 8px;
     }
     .green-cancel-button{
         height: 20px;
         width: 20px;
-    
+        
     }
     .green-cancel-button img{
-        height: 10px;
+        height: 8px;
     }
     .nav-bar{
         display: none;
@@ -1030,9 +1032,7 @@ input{
     .page-name-wrapper{
         display: none;
     }
-    .hero-container{
-        height: 87vh;
-    }
+
     .hero-container-body-top{
         display: flex;
         flex-direction: column-reverse;
@@ -1140,11 +1140,11 @@ input{
         height: auto;
     }
     .contact-input-box {
-        width: 380px;
+        width: 300px;
     }
     textarea{
-        width: 380px;
-        margin-left: -5%;
+        width: 300px;
+        margin-left: -10%;
     }
     .contact-form-lable{
         margin-top: 10px;
@@ -1203,9 +1203,6 @@ input{
     .nav-text{
         font-size: 16px;
     }
-    .hero-container-focused{
-        height: 100vh;
-    }
     .hero-container-body-top{
         height: 90%;
     }
@@ -1215,4 +1212,19 @@ input{
     .x-mid-with-container{
         background-size: 50%;
     }
+    .mian-body-wrapper{
+        height: auto;
+    }
+    .hero-container{
+      height: 85vh;
+    }
+    .hero-container-focused{
+        height: 100%;
+    }
+    .hidden-area{
+        height: 100%;
+        width: 100%;
+    }
+
 }
+
