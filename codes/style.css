@@ -325,6 +325,14 @@
     width: 60%;
     background-color: transparent;
 }
+.x-button:hover{
+    background-image: url("/assets/pattern-bg.png");
+    background-color: rgb(27, 125, 59);
+}
+.xx-button:hover{
+    background-image: url("/assets/pattern-bg.png");
+    background-color: rgb(27, 125, 59);
+}
 .events-holder{
     
     width: 255px;
@@ -1228,3 +1236,10 @@ input{
 
 }
 
+
+input[type="text"]{
+    color: white;
+}
+.event-number{
+    cursor: pointer;
+}

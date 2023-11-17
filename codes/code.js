@@ -1,4 +1,5 @@
 var counter = 1;
+var countSlider = 1;
 
 function dispnavBar(){
     counter = counter + 1;
@@ -15,43 +16,43 @@ function HideUpdates(){
     document.getElementById('newupdates').style.display = "none";
 }
 function nextSlide(){
-    counter = counter + 1;
-    if(counter==1){
+    countSlider = countSlider + 1;
+    if(countSlider==1){
         document.getElementById('container1').scrollIntoView();  
     }
-    if(counter==2){
+   else if(countSlider==2){
         document.getElementById('container2').scrollIntoView();  
     }
-    if(counter==3){
+    else if(countSlider==3){
         document.getElementById('container3').scrollIntoView();  
     }
-    if(counter==4){
+    else if(countSlider==4){
         document.getElementById('container4').scrollIntoView();  
     }
-    if(counter>4){
-        counter = 1;
+    else if(countSlider > 4 || countSlider < 0){
+        countSlider = 1;
         document.getElementById('container1').scrollIntoView();  
     }
+    console.log(countSlider);
 }
 
 
 function preSlide(){
-    counter = counter - 1;
-    if(counter==1){
+    countSlider = countSlider - 1;
+    if(countSlider==1){
         document.getElementById('container1').scrollIntoView();  
     }
-    if(counter==2){
+    else if(countSlider==2){
         document.getElementById('container2').scrollIntoView();  
     }
-    if(counter==3){
+    else if(countSlider==3){
         document.getElementById('container3').scrollIntoView();  
     }
-    if(counter==4){
+    else if(countSlider==4){
         document.getElementById('container4').scrollIntoView();  
     }
-    if(counter<0){
-        counter = 1;
+    else if(countSlider > 4 || countSlider < 0){
+        countSlider = 1;
         document.getElementById('container1').scrollIntoView();  
     }
 }
-
