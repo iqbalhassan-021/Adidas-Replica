@@ -11,6 +11,9 @@ function dispnavBar(){
 }
 
 
+function HideUpdates(){
+    document.getElementById('newupdates').style.display = "none";
+}
 function nextSlide(){
     counter = counter + 1;
     if(counter==1){
@@ -51,5 +54,4 @@ function preSlide(){
         document.getElementById('container1').scrollIntoView();  
     }
 }
-
 
