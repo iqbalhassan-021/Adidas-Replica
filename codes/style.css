@@ -161,6 +161,7 @@
     width: 260px;
     background-color: transparent;
     margin-left: 10%;
+    
 }
 ::-webkit-input-placeholder{
     color: gray;
@@ -722,7 +723,7 @@ input{
 }
 .mobile-nav-bar{
     display: none;
-    position: absolute;
+    position: relative;
     height: 80vh;
 }
 
@@ -1015,7 +1016,7 @@ input{
 
 
 /*Mobile Screens*/
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 435px) {
     .new-updates{
         height: 5vh;
         font-size: 8px;
@@ -1242,4 +1243,111 @@ input[type="text"]{
 }
 .event-number{
     cursor: pointer;
+}
+.footer a:hover{
+    color: #217f40;
+}
+
+
+
+.pop-up{
+    height: 60vh;
+    width: 450px;
+    background-color: white;
+
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 5px;
+      background-color: #ffffff6c;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+      display: none;
+}
+.the-video{
+    height: 80%;
+    width: 100%;
+    background-color: red;
+}
+.pop-up button{
+    height: 10%;
+    margin-top: 10px;
+    width: 100%;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.the-video iframe{
+    height: 100%;
+    width: 100%;
+}
+
+.bluredback{
+    height: 100vh;
+    width: 100%;
+
+
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 5px;
+      background-color: #ffffff98;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+     display: none;
+}
+.blog-card-holder{
+    scroll-snap-type: x mandatory;
+}
+.blog-card{
+    flex: 4 4 20%;
+    scroll-snap-align: start;
+}
+.read-more button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.read-more button:hover{
+    background-color: #217f40;
+    background-image: url("/assets/pattern-bg.png");
+}
+.search-holder input[type="submit"]{
+    width: 50px;
+    height: 40px;
+   border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("/assets/search-icon.png");
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center;
+}
+.search-holder form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #012c1f;
+    background-image: url("/assets/pattern-bg.png");
+  
+}
+.blog-card{
+    width: 25%;
+}
+input[type="text"]{
+    color: black;
+}
+input[type="email"]{
+    color: black;
 }
