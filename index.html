@@ -12,8 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" /> -->
     <title>WPBrigade</title>
 </head>
 
@@ -197,7 +201,7 @@
                         </p>
                     </div>
                     <div class="x-mid-with-container display-flex-col">
-                        <button class="play-icon display-flex-col" onclick="ShowPopUp()">
+                        <button class="play-icon display-flex-col"  data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/MMFqJFqdSJg" href="javascript:;">
                             <img src="/assets/play-icon.png" alt="">
                         </button>
                     </div>
@@ -233,7 +237,7 @@
                         </p>
                     </div>
                     <div class="x-mid-with-container display-flex-col">
-                        <button class="play-icon display-flex-col" onclick="ShowPopUp()">
+                        <button class="play-icon display-flex-col"   data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/MMFqJFqdSJg" href="javascript:;">
                             <img src="/assets/play-icon.png" alt="">
                         </button>
                     </div>
@@ -270,7 +274,7 @@
                         </p>
                     </div>
                     <div class="x-mid-with-container display-flex-col">
-                        <button class="play-icon display-flex-col" onclick="ShowPopUp()">
+                        <button class="play-icon display-flex-col"   data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/MMFqJFqdSJg" href="javascript:;"">
                             <img src="/assets/play-icon.png" alt="">
                         </button>
                     </div>
@@ -307,7 +311,7 @@
                         </p>
                     </div>
                     <div class="x-mid-with-container display-flex-col">
-                        <button class="play-icon display-flex-col" onclick="ShowPopUp()">
+                        <button class="play-icon display-flex-col"  data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/MMFqJFqdSJg" href="javascript:;"">
                             <img src="/assets/play-icon.png" alt="">
                         </button>
                     </div>
@@ -707,20 +711,31 @@
                 © copyright 2020 Adidas
             </p>
         </div>
-        <div class="bluredback" id="bluredback"></div>
-        <div class="pop-up" id="popup">
-            <div class="the-video">
-                <iframe id="video" src="https://www.youtube.com/embed/MMFqJFqdSJg"
-                    title="WPBrigade&#39;s Trip To MushkPuri Top - 2021" frameborder="0"
-                    allow="autoplay; clipboard-write;  gyroscope; " mute></iframe>
-            </div>
-            <button class="close" onclick="closePopUp()">
-                Close
-            </button>
-        </div>
-    </div>
-    <script language="javascript" type="text/javascript" src="jquery-1.8.2.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="/node_modules/jquery/dist/jquery.js"></script>
+        <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 
+        <script>
+            $(document).ready(function(){
+              $('.blog-card-holder').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  600: {
+                    items: 3
+                  },
+                  1000: {
+                    items: 5
+                  }
+                }
+              });
+            });
+          </script> -->
 </body>
-
 </html>

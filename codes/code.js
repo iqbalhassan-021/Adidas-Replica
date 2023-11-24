@@ -5,10 +5,10 @@ var blogCounter = 1;
 function dispnavBar() {
     counter = counter + 1;
     if (counter % 2 == 1) {
-        document.getElementById('mobileNavBar').style.display = "none";
+        document.getElementById('mobileNavBar').style.display = "block";
     }
     else if (counter % 2 == 0) {
-        document.getElementById('mobileNavBar').style.display = "block";
+        document.getElementById('mobileNavBar').style.display = "none";
     }
 }
 
