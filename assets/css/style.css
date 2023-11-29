@@ -1531,6 +1531,11 @@ input[type="radio"]{
   .xx-text-holder span{
     margin: 0px;
   }
+  .xx-image-background {
+    width: 100%;
+    height: auto;
+    min-height: 50%;
+  }
 }
 .search-holder input[type="text"]{
   color: white;
