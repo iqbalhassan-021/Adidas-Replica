@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     
-    <title>WPBrigade</title>
+    <title>Replica Task 1 | WPBrigade</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
     <div class="mian-body-wrapper">
         <div class="new-updates display-flex-row" id="newupdates">
             <p>
-               <strong>LIVE RACE STREAM FROM GATOR NATIONALS IN SARASOTA, FL / <a href="#" class="green-text">WATCH NOW</a></strong> 
+               <strong>LIVE RACE STREAM FROM GATOR NATIONALS IN SARASOTA, FL / </strong> <a href="#" class="green-text">WATCH NOW</a>
             </p>
             <button class="green-cancel-button" onclick="HideUpdates()">
                 <img src="/assets/images/x-mark.png" alt="">
@@ -617,6 +617,15 @@
                 return '<div class="slider-boxes boxes2" id="boxes2"></div>';
                 },
                 responsive: [
+                {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 8,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
     {
       breakpoint: 1024,
       settings: {
