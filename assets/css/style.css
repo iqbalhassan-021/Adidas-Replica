@@ -1509,8 +1509,30 @@ input[type="radio"]{
     margin-left: auto;
     margin-right: auto;
   }
+  .x-text-holder{
+
+    padding: 5px;
+    height: auto;
+  }
+  .x-text-holder p{
+    margin: 0px;
+  }
+  .x-text-holder span{
+    margin: 0px;
+  }
+  .xx-text-holder{
+
+    padding: 5px;
+    height: auto;
+  }
+  .xx-text-holder p{
+    margin: 0px;
+  }
+  .xx-text-holder span{
+    margin: 0px;
+  }
 }
-input[type="text"]{
+.search-holder input[type="text"]{
   color: white;
 }
 .event-details{
