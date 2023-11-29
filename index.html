@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     
-    <title>Replica Task 1 | WPBrigade</title>
+    <title>PSD Replica Task 1 | WPBrigade</title>
 </head>
 
 <body>
@@ -612,7 +612,8 @@
                 speed: 300,
                 slidesToShow:5,
                 slidesToScroll: 4,
- 
+                autoplay: true,
+          
                 dots: true,
                 customPaging : function(slider, i) {
                 return '<div class="slider-boxes boxes2" id="boxes2"></div>';
@@ -621,7 +622,7 @@
                 {
       breakpoint: 1200,
       settings: {
-        slidesToShow: 8,
+        slidesToShow: 4,
         slidesToScroll: 3,
         infinite: true,
         dots: true
@@ -657,19 +658,7 @@
              
                             });
         </script>
-              <script>
-                $('.hidden-are').slick({
-        
-                    infinite: true,
-                    speed: 300,
-                    slidesToShow:5,
-                    slidesToScroll: 4,
-                    dots: true,
-                    customPaging : function(slider, i) {
-            return '<div class="slider-boxes boxes2" id="boxes2"></div>';
-        },
-                                });
-            </script>
+    
 
 <script>
     $('.vertical-slide-container').slick({
@@ -679,6 +668,8 @@
         slidesToShow:1,
         slidesToScroll: 1,
         dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
         responsive: [
     {
       breakpoint: 1024,

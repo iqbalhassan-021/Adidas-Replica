@@ -1,10 +1,10 @@
-* {
+*{
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
   scroll-behavior: smooth;
-}
 
+}
 .display-flex-row {
   display: flex;
   justify-content: center;
@@ -148,12 +148,7 @@
   height: 60px;
 
 }
-.no-skew {
- 
-}
-.x-no-skew {
-  
-}
+
 .search-holder {
   height: 100%;
   width: auto;
@@ -816,6 +811,7 @@ input[type="text"] {
 .footer a:hover {
   color: #217f40;
 }
+
 
 .pop-up {
   height: 60vh;
