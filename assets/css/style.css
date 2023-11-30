@@ -64,6 +64,9 @@ body{
   text-decoration: none;
   color: white;
 }
+.shows-holder a:hover{
+  color: #012c1f;
+}
 .new-updates p {
   text-align: center;
   position: absolute;
@@ -349,23 +352,33 @@ body{
   background-image: url("/assets/images/pattern-bg.png");
   background-color: rgb(27, 125, 59);
 }
+.event{
+  margin-top: 0px;
+  height: 40px;
+  width: 100%;
+  background-color:#012c1fad;
+  background-image: url("/assets/images/pattern-bg.png");
+  padding: 10px 0px 0px 10px;
+
+}
 .events-holder {
-  width: 300px;
+  width: 350px;
   height: 0px;
-  min-height: 300px;
+  min-height: 350px;
   
   margin-left: 20px;
-  background-color: #08512d;
+  background-color: #1b7d3b;
   background-image: url("/assets/images/pattern-bg.png");
-
+  padding-top: 0px;
+  margin-top: 0px;
 }
 .events-holder h1 {
   font-family: "Oswald", sans-serif;
   font-family: "Roboto", sans-serif;
   font-size: 17px;
   color: white;
-  margin-top: 10px;
-  margin-left: 20px;
+
+
 }
 .shows-holder {
   width: 100%;
@@ -376,7 +389,7 @@ body{
 }
 .show-list {
   width: 80%;
-  height: 46px;
+  height: 60px;
   margin-top: 10px;
 }
 .event-number {
@@ -1043,7 +1056,7 @@ input[type="radio"]{
 
 
 /*Tablet*/
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1020px) {
   .mian-body-wrapper {
     height: 0;
   }
@@ -1159,15 +1172,16 @@ input[type="radio"]{
 .nav-bar{
   width: 100%;
   height: auto;
-  position: relative;
+
 }
 .nav-button{
   height: 50px;
-  width: 110px;
+  width: 145px;
+  
   margin-left: 0px;
 }
 .new-updates{
-  position: absolute;
+  position: relative;
 }
 .brand-name-holder img{
   height: 20px;
@@ -1176,6 +1190,13 @@ input[type="radio"]{
   height: 200px;
   width: 200px;
 }
+.new-updates{
+  position: relative;
+}
+.mian-body-wrapper{
+  display: inline;
+}
+
 }
 
 /*Big Screens*/

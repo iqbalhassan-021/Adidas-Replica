@@ -379,9 +379,12 @@
             </div>
         </div>
         <div class="events-holder">
-            <h1>
-                EVENTS
-            </h1>
+            <div class="event">
+                <h1>
+                    EVENTS
+                </h1>
+            </div>
+        
             <div class="shows-holder display-flex-col">
                 <div class="show-list display-flex-row">
                     <div class="event-number display-flex-col">
@@ -395,7 +398,7 @@
                         </p>
 
                         <span>
-                            USA
+                           <a href="" class="no-decoration">USA</a> 
                         </span>
                     </div>
                 </div>
@@ -411,7 +414,7 @@
                         </p>
 
                         <span>
-                            USA
+                            <a href="" class="no-decoration">USA</a>
                         </span>
                     </div>
                 </div>
@@ -427,7 +430,7 @@
                         </p>
 
                         <span>
-                            USA
+                            <a href="" class="no-decoration">USA</a>
                         </span>
                     </div>
                 </div>
@@ -443,7 +446,7 @@
                         </p>
 
                         <span>
-                            USA
+                            <a href="" class="no-decoration">USA</a>
                         </span>
                     </div>
                 </div>
@@ -616,9 +619,7 @@
                 autoplay: true,
           
                 dots: true,
-                customPaging : function(slider, i) {
-                return '<div class="slider-boxes boxes2" id="boxes2"></div>';
-                },
+         
                 responsive: [
                 {
       breakpoint: 1200,
@@ -702,9 +703,7 @@
     // instead of a settings object
   ],
   dots: true,
-                customPaging : function(slider, i) {
-                return '<div class="slider-boxes boxes2 slick-active" id="boxes2"></div>';
-                },
+ 
                 nextArrow: '<img src="/assets/images/hero-slider-right-arrow.png" alt="" class="right-arrow">',
                 prevArrow: '<img src="/assets/images/hero-slider-leftt-arrow.png" alt="" class="left-arrow">'
     });
