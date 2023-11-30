@@ -5,6 +5,26 @@
   scroll-behavior: smooth;
 
 }
+body{
+  background-color: rgb(1, 44, 31);
+  background-image: url("/assets/images/pattern-bg.png");
+ 
+}
+
+.slider-boxes:hover{
+  background-color: white;
+}
+.slider-boxes.active{
+  background-color: white; 
+}
+.body-container{
+  height: auto;
+  max-width: 1400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 .display-flex-row {
   display: flex;
   justify-content: center;
@@ -1023,47 +1043,11 @@ input[type="radio"]{
 
 
 /*Tablet*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1120px) {
   .mian-body-wrapper {
     height: 0;
   }
-  .new-updates {
-    height: 4vh;
-  }
-  .logo-holder {
-    height: 6vh;
-  }
-  .nav-bar {
-    height: 7vh;
-  }
-  .search-holder {
-    width: 300px;
-    margin-left: 0%;
-  }
-  .search-holder input[type="text"] {
-    width: 200px;
-  }
-  .page-name-wrapper {
-    height: 10vh;
-  }
-  .page-name-holder p {
-    margin-left: 10%;
-  }
-  .hero-container {
-    height: 77vh;
-  }
-  .blog-slider {
-    height: 20vh;
-  }
-  .events-holder {
-
-  }
-  .nav-text {
-    font-size: 12px;
-  }
-  .x-logo {
-    margin-right: 20%;
-  }
+  
   .hero-container-button {
     display: none;
   }
@@ -1078,9 +1062,7 @@ input[type="radio"]{
   .x-mid-with-container {
     width: 30%;
   }
-  .hero-container {
-    height: 50vh;
-  }
+
   .x-mid-with-container {
     background-size: 80%;
   }
@@ -1102,9 +1084,7 @@ input[type="radio"]{
     width: 513px;
     padding: 0px;
   }
-  .hero-container-body-bottom {
-    height: 10%;
-  }
+ 
   .blog-slider {
     overflow: hidden;
     padding: 0%;
@@ -1168,18 +1148,34 @@ input[type="radio"]{
   .search-holder input[type="text"] {
     width: 150px;
   }
-  .nav-button {
-    width: auto;
-    padding: 12px;
-    margin-left: 5px;
-  }
+
   input {
     outline: none;
     border: none;
   }
-  .brand-name-holder img {
-    height: 15%;
-  }
+.page-name-holder{
+  height: auto;
+}
+.nav-bar{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.nav-button{
+  height: 50px;
+  width: 110px;
+  margin-left: 0px;
+}
+.new-updates{
+  position: absolute;
+}
+.brand-name-holder img{
+  height: 20px;
+}
+.slide-container img{
+  height: 200px;
+  width: 200px;
+}
 }
 
 /*Big Screens*/
@@ -1215,19 +1211,14 @@ input[type="radio"]{
     width: 70%;
   }
 }
-@media only screen and (max-width: 1100px){
-  .blog-content {
-    justify-content: center;
 
-    flex-direction: column;
-  }
-}
 /*Mobile Screens*/
 @media only screen and (max-width: 435px) {
   .hero-container{
     height: auto;
     
   }
+
   .background-cover{
     padding: 20px;
   }
@@ -1532,6 +1523,9 @@ input[type="radio"]{
     height: auto;
     min-height: 50%;
   }
+  .reversed-div{
+    flex-direction: column-reverse;
+  }
 }
 .search-holder input[type="text"]{
   color: white;
@@ -1541,4 +1535,22 @@ input[type="radio"]{
   height: auto;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+select.classic {
+  background-image:
+    linear-gradient(45deg, transparent 50%, rgb(146, 146, 146) 50%),
+    linear-gradient(135deg, rgb(146, 146, 146) 50%, transparent 50%),
+    linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+.contact-input-box{
+  appearance: none;
 }

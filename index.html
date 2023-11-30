@@ -22,7 +22,7 @@
 </head>
 
 <body>
-
+<div class="body-container">
     <div class="mian-body-wrapper">
         <div class="new-updates display-flex-row" id="newupdates">
             <p>
@@ -257,7 +257,7 @@
  
 
     </div>
-    </div>
+
     <div class="blog-content ">
         <div class="blog-body">
             <div class="blog-slider display-flex-row">
@@ -359,7 +359,7 @@
                    
                 </div>
             </div>
-            <div class="half-height-div display-flex-row">
+            <div class="half-height-div display-flex-row reversed-div">
 
                 <div class="xx-text-holder">
                     <p class="">
@@ -478,17 +478,17 @@
                     
                         COUNTRY
                 <br>
-                    <select class="contact-input-box" required id="country">
+                    <select class="contact-input-box classic" required id="country">
                         <option value="">USA</option>
                         <option value="">UAE</option>
                         <option value="">AUS</option>
                     </select>
                 </label>
-                <label for="state" class="contact-form-lable">
+                <label for="state" class="contact-form-lable ">
                   
                         STATE
               <br>
-                    <select class="contact-input-box" required id="state">
+                    <select class="contact-input-box classic" required id="state">
                         <option value="">USA</option>
                         <option value="">UAE</option>
                         <option value="">AUS</option>
@@ -498,7 +498,7 @@
             
                         Gender
                    <br>
-                    <select class="contact-input-box" required id="gender">
+                    <select class="contact-input-box classic" required id="gender">
                         <option value="">Male</option>
                         <option value="">Female</option>
                         <option value="">Other</option>
@@ -602,6 +602,8 @@
             </p>
         </div>
 
+</div>
+</div>
     
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -610,7 +612,7 @@
     
                 infinite: true,
                 speed: 300,
-                slidesToShow:5,
+                slidesToShow:4,
                 slidesToScroll: 4,
                 autoplay: true,
           
@@ -701,7 +703,7 @@
   ],
   dots: true,
                 customPaging : function(slider, i) {
-                return '<div class="slider-boxes boxes2 " id="boxes2"></div>';
+                return '<div class="slider-boxes boxes2 slick-active" id="boxes2"></div>';
                 },
                 nextArrow: '<img src="/assets/images/hero-slider-right-arrow.png" alt="" class="right-arrow">',
                 prevArrow: '<img src="/assets/images/hero-slider-leftt-arrow.png" alt="" class="left-arrow">'
