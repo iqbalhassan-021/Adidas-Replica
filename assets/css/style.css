@@ -1540,5 +1540,14 @@ select.classic {
   margin-left: 10px;
 }
 .gender{
-  width: 90%;
+  width: 100%;
+}
+.radio-lable{
+  margin-right: 20px;
+}
+@media only screen and (min-width: 1020px) and (max-width: 1130px)  {
+ .blog-content{
+  padding-left: 10px;
+  padding-right: 10px;
+ }
 }
